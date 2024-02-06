@@ -252,6 +252,15 @@
 \newcommand{\vkahalchazzan}{\instruction{וש"ץ: קהל }}
 \newcommand{\shabbos}{\instruction{בשבת: }}
 
+\begin{pycode}
+import json
 
+with open('tanakh.json', 'r') as file:
+	tanakh = json.load(file)
+
+def get_verse(category, book, chapter, verse):
+    return tanakh[category][book]["text"][chapter -1][verse -1]
+    
+\end{pycode}
 
 \setstretch{1.5}
