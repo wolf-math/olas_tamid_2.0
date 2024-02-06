@@ -1,0 +1,12 @@
+texput.log
+
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.pytxcode
+
+.ipynb_checkpoints 
+
+
